@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="369dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cargo"
+        android:layout_width="367dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="6dp"
+        android:hint="@string/cargo"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/salario"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/nome"
+        app:layout_constraintRight_toRightOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/salario"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="43dp"
+        android:hint="@string/salario"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/adicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cargo"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/adicionar"
+        android:layout_width="398dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/adicionar"
+        app:layout_constraintBottom_toTopOf="@+id/listar"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintLeft_toRightOf="@+id/salario"
+        app:layout_constraintRight_toRightOf="@+id/listar"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/listar"
+        android:layout_width="399dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/listar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

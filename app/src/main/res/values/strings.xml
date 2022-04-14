@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android_Crud_PHP_MySQL</string>
+
+    <string name="id">Id do funcionario</string>
+    <string name="nome">Nome do funcionario</string>
+    <string name="cargo">Cargo</string>
+    <string name="salario">Salário</string>
+
+    <string name="atualizar">Atualizar Funcionario</string>
+    <string name="adicionar">Adicionar Funcionario</string>
+    <string name="apagar">ApagarFuncionario </string>
+    <string name="listar">Listar Funcionario</string>
+</resources>
